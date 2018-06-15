@@ -1,0 +1,11 @@
+version: '2.2'
+services:
+  forwardproxy:
+    container_name: forwardproxy
+    image: mitmproxy/mitmproxy
+    command: mitmdump
+    volumes:
+      - ${CONFIG_PATH}/config.yaml:/home/mitmproxy/.mitmproxy/config.yaml
+    ports:
+      - "8888:8080"
+    restart: always 

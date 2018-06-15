@@ -1,0 +1,6 @@
+mode: regular
+upstream_cert: false 
+set ssl_insecure: true
+stream_websockets: true 
+ignore_hosts:
+  - .*

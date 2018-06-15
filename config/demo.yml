@@ -1,0 +1,7 @@
+mode: 'upstream:http://x.y.z.t:8080'
+upstream_cert: false 
+set ssl_insecure: true
+stream_websockets: true 
+upstream_auth: "login:password"
+ignore_hosts:
+  - .*
