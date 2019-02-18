@@ -1,0 +1,7 @@
+
+rules:
+  - name: Direct
+    type: direct
+    when:
+      type: host_regexp
+      pattern: .*
